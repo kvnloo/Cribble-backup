@@ -15,3 +15,4 @@ jobs:
         with: {repository: kvnloo/home, token: '${{ secrets.MIRROR_TOKEN }}', path: .home, sparse-checkout: tools/fork-standard, persist-credentials: false}
       - run: .home/tools/fork-standard/scripts/run-mirror.sh
         env: {UPSTREAM: 'Birdabo404/Cribble', FORK: 'kvnloo/Cribble', BRANCH: 'main', MIRROR_TOKEN: '${{ secrets.MIRROR_TOKEN }}'}
+# registered: 2026-11-24T19:04:25Z (editing this file makes GitHub register the workflow)
